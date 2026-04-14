@@ -564,14 +564,9 @@ strong { font-weight: 700; }
         <span class="grade-label">8th</span>
         <span class="grade-sublabel">Fellow or Guardian</span>
       </div>
-      <div class="grade-card card-g9" onclick="showPage('grade-9')">
+      <div class="grade-card card-g10" onclick="showPage('grade-910')">
         <span class="grade-card-tag">Grade</span>
-        <span class="grade-label">9th</span>
-        <span class="grade-sublabel">Fellow or Guardian</span>
-      </div>
-      <div class="grade-card card-g10" onclick="showPage('grade-10')">
-        <span class="grade-card-tag">Grade</span>
-        <span class="grade-label">10th</span>
+        <span class="grade-label" style="font-size:22px;">9th &amp; 10th</span>
         <span class="grade-sublabel">Fellow or Guardian</span>
       </div>
       <div class="grade-card card-g11" onclick="showPage('grade-11')">
@@ -601,9 +596,10 @@ strong { font-weight: 700; }
 <div id="page-grade-8" class="page accent-g8">
   <div class="page-hero hero-g8">
     <div class="page-hero-inner">
-    <div class="page-hero-eyebrow">8th Grade</div>
+      <div class="page-hero-eyebrow">8th Grade</div>
     <h2>Let's Finish Strong.</h2>
     <p>Check off everything below before the end of April.</p>
+    </div>
   </div>
   <div class="page-content">
     <div class="role-tabs">
@@ -708,35 +704,36 @@ strong { font-weight: 700; }
   </div>
 </div>
 
-<!-- ===================== 9TH GRADE ===================== -->
-<div id="page-grade-9" class="page accent-g910">
+<!-- ===================== 9TH & 10TH GRADE ===================== -->
+<div id="page-grade-910" class="page accent-g910">
   <div class="page-hero hero-g910">
     <div class="page-hero-inner">
-    <div class="page-hero-eyebrow">9th Grade</div>
-    <h2>Let's Finish Strong.</h2>
-    <p>Check off everything below before the end of April.</p>
+      <div class="page-hero-eyebrow">9th &amp; 10th Grade</div>
+      <h2>Let's Finish Strong.</h2>
+      <p>Check off everything below before the end of April.</p>
+    </div>
   </div>
   <div class="page-content">
     <div class="role-tabs">
-      <button class="role-tab active" onclick="switchTab(this,'guardian-9')">Guardian</button>
-      <button class="role-tab" onclick="switchTab(this,'fellow-9')">Fellow</button>
+      <button class="role-tab active" onclick="switchTab(this,'guardian-910')">Guardian</button>
+      <button class="role-tab" onclick="switchTab(this,'fellow-910')">Fellow</button>
     </div>
 
-    <!-- GUARDIAN 9 -->
-    <div id="guardian-9" class="role-panel active">
+    <!-- GUARDIAN 9/10 -->
+    <div id="guardian-910" class="role-panel active">
       <div class="fyt-block">
         <h4>Find Your Thing</h4>
         <p>Building a strong set of experiences early is one of the best things your Fellow can do for their future. Explore opportunities together and encourage them to apply to at least one program this summer &mdash; colleges look for long-term commitment, and the earlier they start, the better.</p>
         <a href="http://thebryc.org/fyt" target="_blank" class="fyt-btn" style="--fyt-btn-color: var(--g910-light);">Browse at thebryc.org/fyt</a>
       </div>
       <div class="progress-section">
-        <div class="progress-label"><span>Progress</span><span class="pct" id="pct-guardian-9">0 of 3 complete</span></div>
-        <div class="progress-bar-track"><div class="progress-bar-fill" id="bar-guardian-9"></div></div>
+        <div class="progress-label"><span>Progress</span><span class="pct" id="pct-guardian-910">0 of 3 complete</span></div>
+        <div class="progress-bar-track"><div class="progress-bar-fill" id="bar-guardian-910"></div></div>
       </div>
       <div class="section-title">Your Checklist</div>
       <div class="task-list">
         <div class="task-card">
-          <div class="task-check" onclick="toggleCheck(this,'guardian-9')"></div>
+          <div class="task-check" onclick="toggleCheck(this,'guardian-910')"></div>
           <div class="task-body">
             <div class="task-name">Complete Guardian EOY Survey + Matriculation Form</div>
             <div class="task-desc">Your survey includes the re-enrollment form for next year. Complete it to secure your Fellow's spot in BRYC.</div>
@@ -744,7 +741,7 @@ strong { font-weight: 700; }
           </div>
         </div>
         <div class="task-card">
-          <div class="task-check" onclick="toggleCheck(this,'guardian-9')"></div>
+          <div class="task-check" onclick="toggleCheck(this,'guardian-910')"></div>
           <div class="task-body">
             <div class="task-name">RSVP for the Underclassmen Symposium</div>
             <div class="task-desc">The Symposium runs April 27-30 and is open to 8th-10th grade Fellows, guardians, and mentors. Come hear about what your Fellow has accomplished this year!</div>
@@ -752,7 +749,7 @@ strong { font-weight: 700; }
           </div>
         </div>
         <div class="task-card">
-          <div class="task-check" onclick="toggleCheck(this,'guardian-9')"></div>
+          <div class="task-check" onclick="toggleCheck(this,'guardian-910')"></div>
           <div class="task-body">
             <div class="task-name">Talk to Your Fellow About Find Your Thing</div>
             <div class="task-desc">Encourage your Fellow to apply for a summer opportunity through BRYC. Long-term commitment to activities outside the classroom is one of the biggest factors colleges look at.</div>
@@ -762,21 +759,21 @@ strong { font-weight: 700; }
       </div>
     </div>
 
-    <!-- FELLOW 9 -->
-    <div id="fellow-9" class="role-panel">
+    <!-- FELLOW 9/10 -->
+    <div id="fellow-910" class="role-panel">
       <div class="fyt-block">
         <h4>Find Your Thing</h4>
-        <p>Long-term commitment to activities outside the classroom is one of the biggest factors colleges consider. Apply to at least one opportunity this summer &mdash; the earlier you start exploring, the more leadership roles you can earn over time.</p>
+        <p>Long-term commitment to activities outside the classroom is one of the biggest factors colleges consider. Apply to at least one opportunity this summer &mdash; the earlier you start exploring, the more leadership roles you can earn over time. And if you're heading into junior year, use this summer to add something real to your college application story.</p>
         <a href="http://thebryc.org/fyt" target="_blank" class="fyt-btn" style="--fyt-btn-color: var(--g910-light);">Browse at thebryc.org/fyt</a>
       </div>
       <div class="progress-section">
-        <div class="progress-label"><span>Progress</span><span class="pct" id="pct-fellow-9">0 of 5 complete</span></div>
-        <div class="progress-bar-track"><div class="progress-bar-fill" id="bar-fellow-9"></div></div>
+        <div class="progress-label"><span>Progress</span><span class="pct" id="pct-fellow-910">0 of 5 complete</span></div>
+        <div class="progress-bar-track"><div class="progress-bar-fill" id="bar-fellow-910"></div></div>
       </div>
       <div class="section-title">Your Checklist</div>
       <div class="task-list">
         <div class="task-card">
-          <div class="task-check" onclick="toggleCheck(this,'fellow-9')"></div>
+          <div class="task-check" onclick="toggleCheck(this,'fellow-910')"></div>
           <div class="task-body">
             <div class="task-name">Complete Your EOY Survey</div>
             <div class="task-desc">Your voice shapes what we do next year. Take a few minutes to share your honest feedback.</div>
@@ -784,7 +781,7 @@ strong { font-weight: 700; }
           </div>
         </div>
         <div class="task-card">
-          <div class="task-check" onclick="toggleCheck(this,'fellow-9')"></div>
+          <div class="task-check" onclick="toggleCheck(this,'fellow-910')"></div>
           <div class="task-body">
             <div class="task-name">RSVP for the Block Party</div>
             <div class="task-desc">The Block Party is Saturday, May 2 from 11am&ndash;2pm. Don't miss it!</div>
@@ -793,136 +790,25 @@ strong { font-weight: 700; }
           </div>
         </div>
         <div class="task-card">
-          <div class="task-check" onclick="toggleCheck(this,'fellow-9')"></div>
+          <div class="task-check" onclick="toggleCheck(this,'fellow-910')"></div>
           <div class="task-body">
             <div class="task-name">Prepare for the Underclassmen Symposium</div>
-            <div class="task-desc">The Symposium runs April 27-30. Your guardians and mentors will be there to hear about what you've learned. Connect with your PM if you have questions about how to prepare.</div>
+            <div class="task-desc">The Symposium runs April 27-30. Your guardians and mentors will be there to hear about what you've learned. Connect with your PM to confirm how to prepare.</div>
           </div>
         </div>
         <div class="task-card">
-          <div class="task-check" onclick="toggleCheck(this,'fellow-9')"></div>
+          <div class="task-check" onclick="toggleCheck(this,'fellow-910')"></div>
           <div class="task-body">
             <div class="task-name">Apply for a Summer Opportunity</div>
-            <div class="task-desc">Summer is the perfect time to explore something new and start building your resume. BRYC expects every Fellow to apply to at least one opportunity.</div>
+            <div class="task-desc">Summer is the perfect time to explore something new and build your resume. BRYC expects every Fellow to apply to at least one opportunity.</div>
             <div class="actions-row"><a href="http://thebryc.org/fyt" target="_blank" class="task-action">Find Your Thing</a></div>
           </div>
         </div>
         <div class="task-card">
-          <div class="task-check" onclick="toggleCheck(this,'fellow-9')"></div>
+          <div class="task-check" onclick="toggleCheck(this,'fellow-910')"></div>
           <div class="task-body">
             <div class="task-name">Get Block Party Approval from Your PM + Mentor</div>
             <div class="task-desc">Reach out to your Program Manager and mentor to confirm your attendance is approved before the event.</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- ===================== 10TH GRADE ===================== -->
-<div id="page-grade-10" class="page accent-g910">
-  <div class="page-hero hero-g910">
-    <div class="page-hero-inner">
-    <div class="page-hero-eyebrow">10th Grade</div>
-    <h2>Let's Finish Strong.</h2>
-    <p>Junior year is next. Let's close out this year with everything done.</p>
-  </div>
-  <div class="page-content">
-    <div class="role-tabs">
-      <button class="role-tab active" onclick="switchTab(this,'guardian-10')">Guardian</button>
-      <button class="role-tab" onclick="switchTab(this,'fellow-10')">Fellow</button>
-    </div>
-
-    <!-- GUARDIAN 10 -->
-    <div id="guardian-10" class="role-panel active">
-      <div class="fyt-block">
-        <h4>Find Your Thing</h4>
-        <p>Junior year is critical for college admissions. Help your Fellow apply for a summer opportunity that builds their experience and gives them real stories to share in applications. BRYC expects all Fellows to apply to at least one opportunity each year.</p>
-        <a href="http://thebryc.org/fyt" target="_blank" class="fyt-btn" style="--fyt-btn-color: var(--g910-light);">Browse at thebryc.org/fyt</a>
-      </div>
-      <div class="progress-section">
-        <div class="progress-label"><span>Progress</span><span class="pct" id="pct-guardian-10">0 of 3 complete</span></div>
-        <div class="progress-bar-track"><div class="progress-bar-fill" id="bar-guardian-10"></div></div>
-      </div>
-      <div class="section-title">Your Checklist</div>
-      <div class="task-list">
-        <div class="task-card">
-          <div class="task-check" onclick="toggleCheck(this,'guardian-10')"></div>
-          <div class="task-body">
-            <div class="task-name">Complete Guardian EOY Survey + Matriculation Form</div>
-            <div class="task-desc">Complete your survey and re-enrollment form now to secure your Fellow's spot for their junior year in BRYC.</div>
-            <div class="actions-row"><a href="http://thebryc.org/guardian26" target="_blank" class="task-action">Complete Survey</a></div>
-          </div>
-        </div>
-        <div class="task-card">
-          <div class="task-check" onclick="toggleCheck(this,'guardian-10')"></div>
-          <div class="task-body">
-            <div class="task-name">RSVP for the Underclassmen Symposium</div>
-            <div class="task-desc">The Symposium runs April 27-30 and is the final one for your 10th grader. Guardians, Fellows, and mentors are all invited to hear about what Fellows have learned this year.</div>
-            <div class="actions-row"><a href="https://docs.google.com/forms/d/e/1FAIpQLScnfmt4UpsKo2Eo0UT-Otdm5bAnvTpSN_K1OGTP-qQVunJMCw/viewform?usp=dialog" target="_blank" class="task-action">RSVP for Symposium</a></div>
-          </div>
-        </div>
-        <div class="task-card">
-          <div class="task-check" onclick="toggleCheck(this,'guardian-10')"></div>
-          <div class="task-body">
-            <div class="task-name">Talk to Your Fellow About Find Your Thing</div>
-            <div class="task-desc">Encourage your Fellow to apply for a summer opportunity. These experiences build college-ready resumes and give your Fellow real stories to tell in their applications.</div>
-            <div class="actions-row"><a href="http://thebryc.org/fyt" target="_blank" class="task-action secondary">Explore at thebryc.org/fyt</a></div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- FELLOW 10 -->
-    <div id="fellow-10" class="role-panel">
-      <div class="fyt-block">
-        <h4>Find Your Thing</h4>
-        <p>You're heading into junior year &mdash; the most important year for your college application. Summer experiences and programs give you real stories to tell in your essays and interviews. Apply now so you start junior year already ahead.</p>
-        <a href="http://thebryc.org/fyt" target="_blank" class="fyt-btn" style="--fyt-btn-color: var(--g910-light);">Browse at thebryc.org/fyt</a>
-      </div>
-      <div class="progress-section">
-        <div class="progress-label"><span>Progress</span><span class="pct" id="pct-fellow-10">0 of 5 complete</span></div>
-        <div class="progress-bar-track"><div class="progress-bar-fill" id="bar-fellow-10"></div></div>
-      </div>
-      <div class="section-title">Your Checklist</div>
-      <div class="task-list">
-        <div class="task-card">
-          <div class="task-check" onclick="toggleCheck(this,'fellow-10')"></div>
-          <div class="task-body">
-            <div class="task-name">Complete Your EOY Survey</div>
-            <div class="task-desc">Share your honest reflections. Your feedback directly shapes how BRYC supports you going into junior year.</div>
-            <div class="actions-row"><a href="http://thebryc.org/fellow26" target="_blank" class="task-action">Take Survey</a></div>
-          </div>
-        </div>
-        <div class="task-card">
-          <div class="task-check" onclick="toggleCheck(this,'fellow-10')"></div>
-          <div class="task-body">
-            <div class="task-name">RSVP for the Block Party</div>
-            <div class="task-desc">The Block Party is Saturday, May 2 from 11am&ndash;2pm. Come celebrate!</div>
-            <div class="approval-badge">Requires PM + Mentor Approval</div>
-            <div class="actions-row"><a href="https://docs.google.com/forms/d/e/1FAIpQLSdgz9BgwvKz__-tCgyCKIxXYfwvCIrsFaY2rj8w5FHN6NKcDg/viewform?usp=dialog" target="_blank" class="task-action">RSVP Now</a></div>
-          </div>
-        </div>
-        <div class="task-card">
-          <div class="task-check" onclick="toggleCheck(this,'fellow-10')"></div>
-          <div class="task-body">
-            <div class="task-name">Prepare for the Underclassmen Symposium</div>
-            <div class="task-desc">The Symposium runs April 27-30 and this is your last one as an underclassman. Guardians and mentors will be there to hear about what you've learned. Make it count and confirm your prep plan with your PM.</div>
-          </div>
-        </div>
-        <div class="task-card">
-          <div class="task-check" onclick="toggleCheck(this,'fellow-10')"></div>
-          <div class="task-body">
-            <div class="task-name">Apply for a Summer Opportunity</div>
-            <div class="task-desc">Junior year is right around the corner, which means college application season is coming fast. Use this summer to add something meaningful to your story.</div>
-            <div class="actions-row"><a href="http://thebryc.org/fyt" target="_blank" class="task-action">Find Your Thing</a></div>
-          </div>
-        </div>
-        <div class="task-card">
-          <div class="task-check" onclick="toggleCheck(this,'fellow-10')"></div>
-          <div class="task-body">
-            <div class="task-name">Get Block Party Approval from Your PM + Mentor</div>
-            <div class="task-desc">Reach out to both your Program Manager and mentor to confirm your block party attendance.</div>
           </div>
         </div>
       </div>
@@ -934,9 +820,10 @@ strong { font-weight: 700; }
 <div id="page-grade-11" class="page accent-g11">
   <div class="page-hero hero-g11">
     <div class="page-hero-inner">
-    <div class="page-hero-eyebrow">11th Grade</div>
+      <div class="page-hero-eyebrow">11th Grade</div>
     <h2>Finish Strong.<br>Prepare for What's Next.</h2>
     <p>Senior year is ahead. Let's close this year right and set up your best possible ACT score.</p>
+    </div>
   </div>
   <div class="page-content">
     <div class="role-tabs">
@@ -1064,9 +951,10 @@ strong { font-weight: 700; }
 <div id="page-mentors" class="page accent-mentor">
   <div class="page-hero hero-mentor">
     <div class="page-hero-inner">
-    <div class="page-hero-eyebrow">Mentors</div>
+      <div class="page-hero-eyebrow">Mentors</div>
     <h2>You Made a Difference.</h2>
     <p>Thank you for everything you gave this year. A few things to wrap up before we close out the season.</p>
+    </div>
   </div>
   <div class="page-content">
     <div class="progress-section">
@@ -1130,8 +1018,7 @@ function switchTab(btn, panelId) {
 
 const totals = {
   'guardian-8': 3, 'fellow-8': 5,
-  'guardian-9': 3, 'fellow-9': 5,
-  'guardian-10': 3, 'fellow-10': 5,
+  'guardian-910': 3, 'fellow-910': 5,
   'guardian-11': 3, 'fellow-11': 4,
   'mentor': 3
 };
