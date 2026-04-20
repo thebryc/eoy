@@ -236,8 +236,6 @@ strong { font-weight: 700; }
   border-color: var(--card-accent, #ccc);
 }
 .grade-card.mentor-card {
-  grid-column: 1 / -1;
-  padding: 20px 24px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -440,6 +438,79 @@ strong { font-weight: 700; }
 .tops-block ul { padding-left: 18px; font-size: 13px; color: #555; line-height: 1.8; }
 .tops-block p { font-size: 13px; color: #888; margin-top: 10px; line-height: 1.6; }
 
+/* LOOK FORWARD SECTION */
+.look-forward {
+  margin-top: 32px;
+  padding-top: 24px;
+  border-top: 1.5px solid #eee;
+}
+.look-forward-title {
+  font-family: 'ProximaNova', sans-serif;
+  font-weight: 900;
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #bbb;
+  margin-bottom: 12px;
+}
+.look-forward-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.look-forward-item {
+  background: white;
+  border-radius: var(--radius);
+  padding: 16px 18px;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.05);
+  border-left: 4px solid var(--accent-color, #ccc);
+}
+.look-forward-item h4 {
+  font-size: 14px;
+  font-weight: 800;
+  margin-bottom: 4px;
+  color: var(--black);
+}
+.look-forward-item p {
+  font-size: 13px;
+  color: #666;
+  line-height: 1.55;
+}
+.look-forward-item a {
+  color: var(--accent-color, #333);
+  font-weight: 700;
+}
+
+/* SAVE THE DATE CARD */
+.save-date-card {
+  background: var(--g8-primary);
+  border-radius: var(--radius);
+  padding: 20px 22px;
+  margin-bottom: 16px;
+}
+.save-date-eyebrow {
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgba(0,0,0,0.5);
+  margin-bottom: 6px;
+}
+.save-date-title {
+  font-family: 'ProximaNova', sans-serif;
+  font-weight: 900;
+  font-size: 20px;
+  color: var(--black);
+  margin-bottom: 8px;
+  line-height: 1.15;
+  letter-spacing: -0.3px;
+}
+.save-date-text {
+  font-size: 13px;
+  color: rgba(0,0,0,0.65);
+  line-height: 1.6;
+}
+
 /* FYT BLOCK */
 .fyt-block {
   background: var(--black);
@@ -488,7 +559,7 @@ strong { font-weight: 700; }
 /* RESPONSIVE */
 @media (min-width: 480px) {
   .grade-grid { grid-template-columns: repeat(4, 1fr); }
-  .grade-card.mentor-card { grid-column: auto; flex-direction: column; text-align: center; padding: 24px 16px 20px; gap: 0; }
+  .grade-card.mentor-card { flex-direction: column; text-align: center; padding: 24px 16px 20px; gap: 0; }
   .mentor-card .grade-label { font-size: 34px; margin-top: 4px; }
 }
 
@@ -609,6 +680,11 @@ strong { font-weight: 700; }
 
     <!-- GUARDIAN 8 -->
     <div id="guardian-8" class="role-panel active">
+      <div class="save-date-card">
+        <div class="save-date-eyebrow">Be on the Lookout</div>
+        <div class="save-date-title">Summer Service Learning Opportunity</div>
+        <p class="save-date-text">We're planning a trip to New Orleans for 8th grade Fellows to see examples of research in action, tour college campuses, and grab some beignets. Details are still being finalized — stay tuned!</p>
+      </div>
       <div class="fyt-block">
         <h4>Find Your Thing</h4>
         <p>BRYC expects all Fellows to apply to at least one opportunity each year. Encourage your Fellow to explore programs this summer &mdash; it builds their resume, develops real passions, and strengthens future college applications. The earlier they start, the more competitive they become.</p>
@@ -644,11 +720,24 @@ strong { font-weight: 700; }
             <div class="actions-row"><a href="http://thebryc.org/fyt" target="_blank" class="task-action secondary">Learn About FYT</a></div>
           </div>
         </div>
+      <div class="look-forward">
+        <div class="look-forward-title">What to Look Forward to Next Year</div>
+        <div class="look-forward-list">
+          <div class="look-forward-item">
+            <h4>9th Grade: The SELF Curriculum</h4>
+            <p>Your 9th grade year will be built around our SELF curriculum &mdash; Social Emotional Learning, Educational paths, Learning tools, and Financial health. It's designed to help you build the foundation for everything that comes next.</p>
+          </div>
+        </div>
       </div>
     </div>
 
     <!-- FELLOW 8 -->
     <div id="fellow-8" class="role-panel">
+      <div class="save-date-card">
+        <div class="save-date-eyebrow">Be on the Lookout</div>
+        <div class="save-date-title">Summer Service Learning Opportunity</div>
+        <p class="save-date-text">We're planning a trip to New Orleans to see examples of research in action, tour some college campuses, and grab beignets. Details are still being finalized — keep an eye out for more info!</p>
+      </div>
       <div class="fyt-block">
         <h4>Find Your Thing</h4>
         <p>BRYC expects all Fellows to apply to at least one opportunity each year. Applying to a program this summer builds your resume and helps you discover your passions early &mdash; the earlier you start, the more competitive you become when it counts.</p>
@@ -697,6 +786,15 @@ strong { font-weight: 700; }
           <div class="task-body">
             <div class="task-name">Get Block Party Approval from Your PM + Mentor</div>
             <div class="task-desc">Reach out to your Program Manager and mentor to confirm your attendance is approved before the event.</div>
+          </div>
+        </div>
+      </div>
+      <div class="look-forward">
+        <div class="look-forward-title">What to Look Forward to Next Year</div>
+        <div class="look-forward-list">
+          <div class="look-forward-item">
+            <h4>9th Grade: The SELF Curriculum</h4>
+            <p>Your 9th grade year will be built around our SELF curriculum &mdash; Social Emotional Learning, Educational paths, Learning tools, and Financial health. It's designed to help you build the foundation for everything that comes next.</p>
           </div>
         </div>
       </div>
@@ -756,6 +854,18 @@ strong { font-weight: 700; }
             <div class="actions-row"><a href="http://thebryc.org/fyt" target="_blank" class="task-action secondary">Explore at thebryc.org/fyt</a></div>
           </div>
         </div>
+      <div class="look-forward">
+        <div class="look-forward-title">What to Look Forward to Next Year</div>
+        <div class="look-forward-list">
+          <div class="look-forward-item">
+            <h4>For Current 9th Graders: ACT Prep Begins</h4>
+            <p>Starting in spring 2027, 10th grade will begin ACT prep. This is your first opportunity to start working toward TOPS eligibility.</p>
+          </div>
+          <div class="look-forward-item">
+            <h4>For Current 10th Graders: TOPS Eligibility Focus</h4>
+            <p>Junior year is all about reaching your TOPS target score. Every point on the ACT can move you to a higher award tier and more money toward tuition. <a href="https://losfa.egnyte.com/dl/V6ygPHFRXJff" target="_blank">Learn more about TOPS eligibility requirements.</a></p>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -812,6 +922,19 @@ strong { font-weight: 700; }
           </div>
         </div>
       </div>
+      <div class="look-forward">
+        <div class="look-forward-title">What to Look Forward to Next Year</div>
+        <div class="look-forward-list">
+          <div class="look-forward-item">
+            <h4>For Current 9th Graders: ACT Prep Begins</h4>
+            <p>Starting in spring 2027, 10th grade will begin ACT prep. This is your first opportunity to start working toward TOPS eligibility.</p>
+          </div>
+          <div class="look-forward-item">
+            <h4>For Current 10th Graders: TOPS Eligibility Focus</h4>
+            <p>Junior year is all about reaching your TOPS target score. Every point on the ACT can move you to a higher award tier and more money toward tuition. <a href="https://losfa.egnyte.com/dl/V6ygPHFRXJff" target="_blank">Learn more about TOPS eligibility requirements.</a></p>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
@@ -839,11 +962,19 @@ strong { font-weight: 700; }
         <a href="http://thebryc.org/fyt" target="_blank" class="fyt-btn" style="--fyt-btn-color: var(--g11-xlight);">Browse at thebryc.org/fyt</a>
       </div>
       <div class="progress-section">
-        <div class="progress-label"><span>Progress</span><span class="pct" id="pct-guardian-11">0 of 3 complete</span></div>
+        <div class="progress-label"><span>Progress</span><span class="pct" id="pct-guardian-11">0 of 4 complete</span></div>
         <div class="progress-bar-track"><div class="progress-bar-fill" id="bar-guardian-11"></div></div>
       </div>
       <div class="section-title">Your Checklist</div>
       <div class="task-list">
+        <div class="task-card">
+          <div class="task-check" onclick="toggleCheck(this,'guardian-11')"></div>
+          <div class="task-body">
+            <div class="task-name">Remind Your Fellow to Submit Their myACT.org Login</div>
+            <div class="task-desc">Over the next two weeks, BRYC will be signing Fellows up for the June ACT in program. Remind your Fellow to submit their myACT.org login credentials now so we can get them registered.</div>
+            <div class="actions-row"><a href="https://docs.google.com/forms/d/e/1FAIpQLScJPA1241ZO8gxFMVOMD5I-MsAmA_9cORoGUU7MTerTLbMveQ/viewform?usp=dialog" target="_blank" class="task-action secondary">View Submission Form</a></div>
+          </div>
+        </div>
         <div class="task-card">
           <div class="task-check" onclick="toggleCheck(this,'guardian-11')"></div>
           <div class="task-body">
@@ -870,22 +1001,23 @@ strong { font-weight: 700; }
       </div>
       <div class="tops-block" style="margin-top: 24px;">
         <h4>Are You TOPS Eligible?</h4>
-        <p style="font-size:13px; color:#555; margin-bottom: 10px; margin-top: 0; line-height: 1.6;">TOPS (Taylor Opportunity Program for Students) covers tuition at qualifying Louisiana schools. ACT score is one of the key requirements. Every point going into senior year matters.</p>
+        <p style="font-size:13px; color:#555; margin-bottom: 10px; margin-top: 0; line-height: 1.6;">TOPS (Taylor Opportunity Program for Students) pays tuition at qualifying Louisiana public colleges. Award amounts change year to year — here's what they cover right now at LSU ($12,695/yr) and Southern ($9,290/yr).</p>
         <ul>
-          <li><strong>TOPS Tech</strong> &mdash; 2.5 GPA + 17 ACT</li>
-          <li><strong>TOPS Opportunity</strong> &mdash; 2.5 GPA + 20 ACT (most common target)</li>
-          <li><strong>TOPS Performance</strong> &mdash; 3.0 GPA + 23 ACT</li>
-          <li><strong>TOPS Honors</strong> &mdash; 3.5 GPA + 27 ACT</li>
-          <li><strong>TOPS Excellence</strong> &mdash; 3.5 GPA + 31 ACT</li>
+          <li><strong>TOPS Tech</strong> &mdash; 2.5 GPA + 17 ACT &mdash; up to ~$3,000/yr</li>
+          <li><strong>TOPS Opportunity</strong> &mdash; 2.5 GPA + 20 ACT &mdash; up to ~$6,000/yr</li>
+          <li><strong>TOPS Performance</strong> &mdash; 3.0 GPA + 23 ACT &mdash; up to ~$6,500/yr</li>
+          <li><strong>TOPS Honors</strong> &mdash; 3.5 GPA + 27 ACT &mdash; up to ~$9,000/yr</li>
+          <li><strong>TOPS Excellence</strong> &mdash; 3.5 GPA + 31 ACT &mdash; up to ~$12,000/yr</li>
         </ul>
-        <p>More info: <a href="https://www.osfa.la.gov/tops.html" target="_blank" style="color: var(--g11-primary);">osfa.la.gov/tops.html</a></p>
+        <p>At Southern, TOPS Opportunity covers nearly all tuition. At LSU, it covers roughly half — every point on the ACT counts. More info: <a href="https://losfa.egnyte.com/dl/V6ygPHFRXJff" target="_blank" style="color: var(--g11-primary);">osfa.la.gov/tops.html</a></p>
       </div>
       <div class="info-card" style="margin-top: 10px;">
         <strong>Not yet TOPS eligible?</strong> Reach out to Ms. Chasity to sign up for the <strong>June ACT</strong>. Contact her at <a href="mailto:chasity@thebryc.org" style="color: var(--g11-primary);">chasity@thebryc.org</a> or <a href="tel:3038175835" style="color: var(--g11-primary);">(303) 817-5835</a>.
       </div>
     </div>
+  </div>
+</div>
 
-    <!-- FELLOW 11 -->
     <div id="fellow-11" class="role-panel">
       <div class="fyt-block">
         <h4>Find Your Thing</h4>
@@ -893,11 +1025,19 @@ strong { font-weight: 700; }
         <a href="http://thebryc.org/fyt" target="_blank" class="fyt-btn" style="--fyt-btn-color: var(--g11-xlight);">Browse at thebryc.org/fyt</a>
       </div>
       <div class="progress-section">
-        <div class="progress-label"><span>Progress</span><span class="pct" id="pct-fellow-11">0 of 4 complete</span></div>
+        <div class="progress-label"><span>Progress</span><span class="pct" id="pct-fellow-11">0 of 5 complete</span></div>
         <div class="progress-bar-track"><div class="progress-bar-fill" id="bar-fellow-11"></div></div>
       </div>
       <div class="section-title">Your Checklist</div>
       <div class="task-list">
+        <div class="task-card">
+          <div class="task-check" onclick="toggleCheck(this,'fellow-11')"></div>
+          <div class="task-body">
+            <div class="task-name">Submit Your myACT.org Login Credentials</div>
+            <div class="task-desc">Over the next two weeks, BRYC will be signing Fellows up for the June ACT in program. Submit your myACT.org login credentials now so we can get you registered.</div>
+            <div class="actions-row"><a href="https://docs.google.com/forms/d/e/1FAIpQLScJPA1241ZO8gxFMVOMD5I-MsAmA_9cORoGUU7MTerTLbMveQ/viewform?usp=dialog" target="_blank" class="task-action">Submit Login</a></div>
+          </div>
+        </div>
         <div class="task-card">
           <div class="task-check" onclick="toggleCheck(this,'fellow-11')"></div>
           <div class="task-body">
@@ -932,17 +1072,31 @@ strong { font-weight: 700; }
       </div>
       <div class="tops-block" style="margin-top: 24px;">
         <h4>Are You TOPS Eligible?</h4>
-        <p style="font-size:13px; color:#555; margin-bottom: 10px; margin-top: 0; line-height: 1.6;">TOPS (Taylor Opportunity Program for Students) pays tuition at qualifying Louisiana colleges. Your ACT score is one of the key requirements. Every point matters going into senior year.</p>
+        <p style="font-size:13px; color:#555; margin-bottom: 10px; margin-top: 0; line-height: 1.6;">TOPS (Taylor Opportunity Program for Students) pays tuition at qualifying Louisiana public colleges. Award amounts change year to year &mdash; here's what they cover right now at LSU ($12,695/yr) and Southern ($9,290/yr).</p>
         <ul>
-          <li><strong>TOPS Tech</strong> &mdash; 2.5 GPA + 17 ACT</li>
-          <li><strong>TOPS Opportunity</strong> &mdash; 2.5 GPA + 20 ACT</li>
-          <li><strong>TOPS Performance</strong> &mdash; 3.0 GPA + 23 ACT</li>
-          <li><strong>TOPS Honors</strong> &mdash; 3.5 GPA + 27 ACT</li>
+          <li><strong>TOPS Tech</strong> &mdash; 2.5 GPA + 17 ACT &mdash; up to ~$3,000/yr</li>
+          <li><strong>TOPS Opportunity</strong> &mdash; 2.5 GPA + 20 ACT &mdash; up to ~$6,000/yr</li>
+          <li><strong>TOPS Performance</strong> &mdash; 3.0 GPA + 23 ACT &mdash; up to ~$6,500/yr</li>
+          <li><strong>TOPS Honors</strong> &mdash; 3.5 GPA + 27 ACT &mdash; up to ~$9,000/yr</li>
+          <li><strong>TOPS Excellence</strong> &mdash; 3.5 GPA + 31 ACT &mdash; up to ~$12,000/yr</li>
         </ul>
-        <p>More info: <a href="https://losfa.egnyte.com/dl/V6ygPHFRXJff" target="_blank" style="color: var(--g11-primary);">osfa.la.gov/tops.html</a></p>
+        <p>At Southern, TOPS Opportunity covers nearly all tuition. At LSU, it covers roughly half &mdash; every point on the ACT counts. More info: <a href="https://losfa.egnyte.com/dl/V6ygPHFRXJff" target="_blank" style="color: var(--g11-primary);">osfa.la.gov/tops.html</a></p>
       </div>
       <div class="info-card" style="margin-top: 10px;">
         <strong>Not yet TOPS eligible?</strong> Reach out to Ms. Chasity to sign up for the <strong>June ACT</strong>. Contact her at <a href="mailto:chasity@thebryc.org" style="color: var(--g11-primary);">chasity@thebryc.org</a> or <a href="tel:3038175835" style="color: var(--g11-primary);">(303) 817-5835</a>.
+      </div>
+      <div class="look-forward">
+        <div class="look-forward-title">What to Look Forward to Next Year</div>
+        <div class="look-forward-list">
+          <div class="look-forward-item">
+            <h4>Fellow Orientation is Mandatory for the Class of 2027</h4>
+            <p>All rising seniors in the Class of 2027 are required to attend BRYC Fellow Orientation for the 2026-2027 year. More details will be shared soon &mdash; mark your calendar.</p>
+          </div>
+          <div class="look-forward-item">
+            <h4>Senior Programming Starts One Week Early</h4>
+            <p>Programs will begin one week earlier in August for seniors. This gives you a head start on your college application season with BRYC support from day one.</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -1013,7 +1167,7 @@ function switchTab(btn, panelId) {
 const totals = {
   'guardian-8': 3, 'fellow-8': 5,
   'guardian-910': 3, 'fellow-910': 5,
-  'guardian-11': 3, 'fellow-11': 4,
+  'guardian-11': 4, 'fellow-11': 5,
   'mentor': 3
 };
 
