@@ -680,11 +680,6 @@ strong { font-weight: 700; }
 
     <!-- GUARDIAN 8 -->
     <div id="guardian-8" class="role-panel active">
-      <div class="save-date-card">
-        <div class="save-date-eyebrow">Be on the Lookout</div>
-        <div class="save-date-title">Summer Service Learning Opportunity</div>
-        <p class="save-date-text">We're planning a trip to New Orleans for 8th grade Fellows to see examples of research in action, tour college campuses, and grab some beignets. Details are still being finalized — stay tuned!</p>
-      </div>
       <div class="fyt-block">
         <h4>Find Your Thing</h4>
         <p>BRYC expects all Fellows to apply to at least one opportunity each year. Encourage your Fellow to explore programs this summer &mdash; it builds their resume, develops real passions, and strengthens future college applications. The earlier they start, the more competitive they become.</p>
@@ -734,11 +729,6 @@ strong { font-weight: 700; }
 
     <!-- FELLOW 8 -->
     <div id="fellow-8" class="role-panel">
-      <div class="save-date-card">
-        <div class="save-date-eyebrow">Be on the Lookout</div>
-        <div class="save-date-title">Summer Service Learning Opportunity</div>
-        <p class="save-date-text">We're planning a trip to New Orleans to see examples of research in action, tour some college campuses, and grab beignets. Details are still being finalized — keep an eye out for more info!</p>
-      </div>
       <div class="fyt-block">
         <h4>Find Your Thing</h4>
         <p>BRYC expects all Fellows to apply to at least one opportunity each year. Applying to a program this summer builds your resume and helps you discover your passions early &mdash; the earlier you start, the more competitive you become when it counts.</p>
@@ -1038,7 +1028,7 @@ strong { font-weight: 700; }
         <a href="http://thebryc.org/fyt" target="_blank" class="fyt-btn" style="--fyt-btn-color: var(--g11-xlight);">Browse at thebryc.org/fyt</a>
       </div>
       <div class="progress-section">
-        <div class="progress-label"><span>Progress</span><span class="pct" id="pct-fellow-11">0 of 5 complete</span></div>
+        <div class="progress-label"><span>Progress</span><span class="pct" id="pct-fellow-11">0 of 6 complete</span></div>
         <div class="progress-bar-track"><div class="progress-bar-fill" id="bar-fellow-11"></div></div>
       </div>
       <div class="section-title">Your Checklist</div>
@@ -1057,6 +1047,14 @@ strong { font-weight: 700; }
             <div class="task-name">Complete Your EOY Survey</div>
             <div class="task-desc">Share your honest reflections on this year. Your feedback helps make BRYC better for you and the Fellows who come after you.</div>
             <div class="actions-row"><a href="http://thebryc.org/fellow26" target="_blank" class="task-action">Take Survey</a></div>
+          </div>
+        </div>
+        <div class="task-card">
+          <div class="task-check" onclick="toggleCheck(this,'fellow-11')"></div>
+          <div class="task-body">
+            <div class="task-name">Complete Your Senior Intake Form</div>
+            <div class="task-desc">This form helps the senior team understand your goals so they can connect you with the strongest post-high school programs and scholarships. Takes just a few minutes and makes a big difference.</div>
+            <div class="actions-row"><a href="http://thebryc.org/2027" target="_blank" class="task-action">Complete Intake Form</a></div>
           </div>
         </div>
         <div class="task-card">
@@ -1136,7 +1134,7 @@ strong { font-weight: 700; }
         <div class="task-body">
           <div class="task-name">Complete Your Mentor EOY Survey</div>
           <div class="task-desc">Your feedback on this year helps us improve the mentor experience and better support Fellows. We genuinely value your perspective.</div>
-          <div class="actions-row"><a href="http://thebryc.org/vip26" target="_blank" class="task-action">Take Survey</a></div>
+          <div class="actions-row"><a href="http://thebryc.org/mentor26" target="_blank" class="task-action">Take Survey</a></div>
         </div>
       </div>
       <div class="task-card">
@@ -1180,7 +1178,7 @@ function switchTab(btn, panelId) {
 const totals = {
   'guardian-8': 3, 'fellow-8': 5,
   'guardian-910': 3, 'fellow-910': 5,
-  'guardian-11': 4, 'fellow-11': 5,
+  'guardian-11': 4, 'fellow-11': 6,
   'mentor': 3
 };
 
